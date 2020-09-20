@@ -1,8 +1,8 @@
 const express = require('express');
 const routes = express.Router();
-const io = require('../server');
 
-const rooms = { }
+const { io, rooms } = require('./ioFunc')
+
 
 routes.get('/', (req, res) => {
   res.render('index', { rooms: rooms })
