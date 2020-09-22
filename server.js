@@ -7,7 +7,7 @@ const io = require('socket.io')(server)
 
 module.exports = io;
 
-const { routes, rooms } = require('./src/routes');
+const { routes } = require('./src/routes');
 
 app.engine("ejs", engines.ejs);
 app.set('views', path.join(__dirname, './src/views'));
